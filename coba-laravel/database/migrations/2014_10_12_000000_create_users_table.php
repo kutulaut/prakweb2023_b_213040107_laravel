@@ -13,6 +13,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        // menambahkan catatan laravel di youtube #6 yaitu minggration database menggunakan mysqlWorkBench
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
