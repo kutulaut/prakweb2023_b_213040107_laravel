@@ -18,11 +18,11 @@
       <tbody>
           @foreach ($posts as $post)
           <tr>
-            <td>{{ $loop->iteration }}</td>
-            <td>{{ $post->title }}</td>
-            <td>{{ $post->category->name }}</td>
+            <td>{{$loop->iteration}}</td>
+            <td>{{$post->title}}</td>
+            <td>{{$post->category->name}}</td>
             <td>
-                <a href="/dashboard/posts/{{ $post->slug }}" class="badge bg-info">
+                <a href="/dashboard/posts/{{$post->slug}}" class="badge bg-info">
                 <span data-feather="eye"></span></a>
                 <a href="" class="badge bg-warning">
                 <span data-feather="edit"></span></a>
